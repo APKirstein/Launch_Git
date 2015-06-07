@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+  </head>
+
+  <body>
+    <h1>
+      <%= @user.name %>
+    </h1>
+
+    <ul>
+      <% @urls.each do |url| %>
+        <li><a href="/launchg/:user_name/git"><%= url.url %></a></li>
+      <% end %>
+    </ul>
+
+    <a href="/launchg">All Users</a>
+  </body>
+</html>

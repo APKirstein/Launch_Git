@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+  </head>
+
+  <body>
+    <h1>Launch Stack</h1>
+
+    <ul>
+      <% @list.each do |usr| %>
+        <li><a href="/launchg/<%= usr.name %>"><%= usr.name %></a></li>
+      <% end %>
+    </ul>
+
+    <form action="/launchg" method="post">
+      <label for="user_name">New User:</label>
+      <input type="text" id="user_name" name="user_name">
+
+      <input type="submit">
+    </form>
+  </body>
+</html>
