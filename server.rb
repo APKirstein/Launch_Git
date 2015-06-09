@@ -42,7 +42,7 @@ get '/launchg/:user_name' do
   erb :show, locals: { user_name: session[:user_name] }
 end
 
-get '/launchg/:user_name/git' do
+get '/launchg' do
   Urls.git(params[:user_name])
   redirect '/launchg/:user_name'
 end
