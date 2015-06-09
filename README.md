@@ -5,3 +5,4 @@ Nokogiri
 Sinatra
 PG
 HTTParty
+rspec
