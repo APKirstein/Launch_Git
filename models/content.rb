@@ -1,7 +1,6 @@
 require 'open-uri'
 require 'Nokogiri'
 require 'pg'
-require 'pry'
 
 require_relative 'urls'
 

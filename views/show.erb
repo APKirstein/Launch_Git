@@ -2,22 +2,24 @@
 <html>
   <head>
     <title>Basic HTML Page</title>
-    <link rel="stylesheet" href="/css/foundation.min.css">
-    <link rel="stylesheet" href="/css/foundation.css">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/home.css">
   </head>
 
   <body>
-    <h1>
+    <h1 id="s_head">
       <%= @user.name %>
     </h1>
 
-    <ul>
-      <% @urls.each do |url| %>
-        <li><a href="https://github.com/<%= url.url %>"><%= url.url %></a></li>
-      <% end %>
-    </ul>
+    <div class="list-box">
+      <ul>
+        <% @urls.each do |url| %>
+          <li><a href="https://github.com/<%= url.url %>"><%= url.url %></a></li>
+        <% end %>
+      </ul>
+    </div>
 
-    <a href="/launchg">All Users</a>
+    <div id="link"><a href="/launchg">All Users</a></div>
   </body>
 </html>

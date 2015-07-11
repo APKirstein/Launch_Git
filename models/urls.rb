@@ -7,7 +7,7 @@ attr_reader :url
 
   def self.git(url)
     system("cd desktop")
-    # system("git clone https://github.com/#{url}.git")
+    system("git clone https://github.com/#{url}.git")
   end
 
 end

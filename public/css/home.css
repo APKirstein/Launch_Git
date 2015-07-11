@@ -1,0 +1,49 @@
+body {
+  background: url("/images/Beautiful-Wallpaper-Of-Universe-HD.jpg");
+}
+
+h1 {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+ul {
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000000;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-box ul {
+  background-color: white;
+  opacity: 0.65;
+}
+
+form label {
+  color: white;
+}
+
+a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#s_head {
+  width: 18%;
+}
+
+#link {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
